@@ -23,7 +23,7 @@ def get_japanese_emoticon(path, emoticon)
     translation = translation['get_emoticon'][emoticon]
  # else
    # return "Sorry, that is not a know emoticon"
-  end
+
  translation
 end
 

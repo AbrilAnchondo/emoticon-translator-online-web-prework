@@ -21,7 +21,7 @@ def get_japanese_emoticon(path, emoticon)
   translation_result = nil 
   translation_hash = load_library(path)
   if !translation_hash.include?(emoticon) 
-    return "Sorry, that is not a know emoticon"
+    return "Sorry, that emoticon was not found"
   else
     translation_result = translation_hash['get_emoticon'][emoticon]
   end

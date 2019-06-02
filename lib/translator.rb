@@ -21,8 +21,8 @@ def get_japanese_emoticon(path, emoticon)
   translation = load_library(path)
   if traslation.include?(emoticon) == false 
     return "that is not a known emoticon"
-  
-    
+  else 
+    translation['get_emoticon']
   end
   translation
 end

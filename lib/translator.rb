@@ -18,13 +18,14 @@ end
 
 def get_japanese_emoticon(path, emoticon)
   # code goes here
+  translation_result = nil 
   translation_hash = load_library(path)
-  #if translation.include?(emoticon) 
-    #translation_result = translation['get_emoticon'][emoticon]
+  if translation_hash.include?(emoticon) 
+    translation_hash = translation_hasg['get_emoticon'][emoticon]
  # else
    # return "Sorry, that is not a know emoticon"
-
- translation
+  end
+ translation_result
 end
 
 def get_english_meaning

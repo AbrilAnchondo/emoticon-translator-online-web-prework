@@ -22,7 +22,7 @@ def get_japanese_emoticon(path, emoticon)
   if translation_hash['get_emoticon'][emoticon] == false
     return "Sorry, that emoticon was not found"
   else
-    translation_hash['get_emoticon'][emoticon]
+    translation = translation_hash['get_emoticon'][emoticon]
   end
  translation
 end

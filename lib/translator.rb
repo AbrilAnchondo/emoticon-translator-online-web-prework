@@ -18,8 +18,14 @@ end
 
 def get_japanese_emoticon(path, emoticon)
   # code goes here
+  translation = {}
   load_library(path)
-  translation =  new_emoticons['get_emoticon'][characters[1]] = characters[0]
+  if emoticons.include?(emoticon) == false 
+    return "that is not a known emoticon"
+  else emoticons.each do |meaning, characters|
+        translation[characters[0]] = characters[1]
+      end
+  end
   translation
 end
 

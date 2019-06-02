@@ -19,9 +19,9 @@ end
 def get_japanese_emoticon(path, emoticon)
   # code goes here
   translation = load_library(path)
-  if emoticons.include?(emoticon) == false 
+  if traslation.include?(emoticon) == false 
     return "that is not a known emoticon"
-  else emoticons.each do |meaning, characters|
+  else translation.each do |meaning, characters|
         translation[characters[0]] = characters[1]
       end
   end

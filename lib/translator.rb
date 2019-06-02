@@ -30,5 +30,10 @@ end
 def get_english_meaning(path, emotico)
   # code goes here
   translation_hash = load_library(path)
-  
+  if translation_hash['get_emoticon'][emoticon] == nil
+    return "Sorry, that emoticon was not found"
+  else
+    translation = translation_hash['get_meaning'][emoticon]
+  end
+  translation
 end
